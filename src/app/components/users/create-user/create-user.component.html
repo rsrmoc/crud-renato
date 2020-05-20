@@ -1,0 +1,16 @@
+<h2>Criação de Usuario</h2> 
+<div class="DivCad" >
+    <label>Usuario:
+        <input class="form-control" placeholder="Usuario"  [(ngModel)]="request.nm_usuario" >
+    </label>
+    <br> 
+    <label>Nome:
+        <input class="form-control" placeholder="Usuario" [(ngModel)]="request.nome"  >
+    </label>
+    <br> 
+    <label>Avatar:
+        <input class="form-control" placeholder="Usuario"   [(ngModel)]="request.avatar" >
+    </label>
+    <br> 
+    <button (click)="save()" >Gravar</button>
+</div>

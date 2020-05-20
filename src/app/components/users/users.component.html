@@ -1,0 +1,26 @@
+<h2>Lista de Usuarios</h2>
+ 
+
+
+
+<table class="table">
+	<tr> 
+		<th>Codigo </th>
+		<th>Usuario</th>
+		<th>Nome</th>
+		<th>Avatar</th>
+		<th>Ação</th>
+    </tr> 
+	<tr *ngFor="let user of usuarios"> 
+        <td>{{user.cd_usuario}}</td>
+        <td>{{user.nm_usuario}}</td>
+        <td>{{user.nome}}</td>
+        <td>{{user.avatar}}</td> 
+        <td class="acao">
+            <a routerLink="/users/update/{{user.cd_usuario}}">EDITAR</a> 
+            | 
+            <a  routerLink="/users/delete/{{user.cd_usuario}}" >DELETAR</a> 
+        </td>
+	</tr> 
+
+</table>

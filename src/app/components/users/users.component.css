@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+    
+}
+table thead {
+    background-color: #cacaca;
+    font-weight: bold;
+}
+
+table td{
+    border: 1px solid;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 6px;
+}
+
+h2{
+    text-align: center;;
+}
+
+.acao{
+    text-align: center;
+}

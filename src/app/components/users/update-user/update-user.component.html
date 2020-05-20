@@ -1,0 +1,18 @@
+ 
+
+<h2>Atualizar Usuario</h2> 
+<div class="DivCad" *ngIf="request">
+    <label>Usuario:
+        <input class="form-control" placeholder="Usuario" [(ngModel)]="request.nm_usuario"  >
+    </label>
+    <br> 
+    <label>Nome:
+        <input class="form-control" placeholder="Usuario" [(ngModel)]="request.nome" >
+    </label>
+    <br> 
+    <label>Avatar:
+        <input class="form-control" placeholder="Usuario" [(ngModel)]="request.avatar"  >
+    </label>
+    <br> 
+    <button (click)="update()" >Atualizar</button>
+</div>
