@@ -36,7 +36,7 @@ export class UserService {
     return this.http.post<User>(_url_up,request);
   }
 
-  delete(id: number): Observable<User> {
+  delete(id: string): Observable<User> {
     const url = `${this.url}/DelUser/${id}`;
     return this.http.delete<User>(url).pipe(
      

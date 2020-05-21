@@ -24,4 +24,12 @@ export class DeleteUserComponent implements OnInit {
       });
   }
 
+  delete(): void {
+    this.userService.delete(this.id).subscribe(() => {
+      alert("Produto excluido com sucesso!");
+      this.router.navigate(["/users"]);
+    });
+  }
+
+
 }
